@@ -1,0 +1,5 @@
+{
+  "name": "SmartAset (Evaluator Aset Pembelajaran)",
+  "description": "Aplikasi evaluasi aset pembelajaran otomatis yang mendeteksi kesalahan penulisan (KBBI/PUEBI), kelengkapan logo, dan panduan penggunaan sesuai kerangka pedoman aset pembelajaran.",
+  "requestFramePermissions": []
+}
