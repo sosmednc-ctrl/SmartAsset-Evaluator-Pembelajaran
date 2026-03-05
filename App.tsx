@@ -198,7 +198,7 @@ const App: React.FC = () => {
           <div className="max-w-4xl mx-auto py-10">
             <h2 className="text-3xl font-black text-slate-900 mb-8 tracking-tight flex items-center gap-3">
               <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-              Riwayat Penilaian PTP
+              Riwayat Penilaian Aset
             </h2>
             <div className="grid gap-5">
               {state.history.length > 0 ? state.history.map(item => (
@@ -321,7 +321,7 @@ const App: React.FC = () => {
                <span className="text-[11px] font-black text-slate-900 uppercase tracking-widest">Kemenkes CorpU Standard</span>
                <div className="h-8 w-px bg-slate-300"></div>
             </div>
-            <p className="text-[10px] text-slate-300 font-black uppercase tracking-[0.5em]">SmartAset v 1.0 • PTP Professional Analysis System</p>
+            <p className="text-[10px] text-slate-300 font-black uppercase tracking-[0.5em]">SmartAset v 1.0 • Aset Professional Analysis System</p>
          </div>
       </footer>
     </div>

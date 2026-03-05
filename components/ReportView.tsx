@@ -24,7 +24,7 @@ const ReportView: React.FC<ReportViewProps> = ({ report, onReset }) => {
 
   const downloadReportTxt = () => {
     let content = `HASIL ANALISIS PROFESIONAL SMARTASET v 1.0\n`;
-    content += `STANDAR PENILAIAN PTP KEMENKES CORPU\n`;
+    content += `STANDAR PENILAIAN ASET KEMENKES CORPU\n`;
     content += `==================================================\n\n`;
     content += `NAMA ASET      : ${report.assetName}\n`;
     content += `SKOR AKHIR     : ${report.overallScore}/100\n`;
@@ -59,7 +59,7 @@ const ReportView: React.FC<ReportViewProps> = ({ report, onReset }) => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `Laporan_Analisis_PTP_${report.assetName.replace(/\s+/g, '_')}.txt`;
+    a.download = `Laporan_Analisis_Aset_${report.assetName.replace(/\s+/g, '_')}.txt`;
     a.click();
     URL.revokeObjectURL(url);
   };
@@ -230,7 +230,7 @@ const ReportView: React.FC<ReportViewProps> = ({ report, onReset }) => {
                 </div>
               </div>
               <div className="text-center bg-white px-10 py-8 rounded-[2.5rem] border-4 border-emerald-50 shadow-xl min-w-[180px]">
-                <div className="text-[11px] font-black text-slate-300 uppercase tracking-[0.3em] mb-2">Skor PTP</div>
+                <div className="text-[11px] font-black text-slate-300 uppercase tracking-[0.3em] mb-2">Skor Aset</div>
                 <div className={`text-7xl font-black ${report.overallScore >= 80 ? 'text-emerald-600' : 'text-amber-500'}`}>{report.overallScore}</div>
                 <div className="mt-2 text-[9px] font-bold text-slate-400 uppercase">Skala 0-100</div>
               </div>
@@ -269,7 +269,7 @@ const ReportView: React.FC<ReportViewProps> = ({ report, onReset }) => {
           <div className="space-y-8">
              <div className="flex items-center gap-4 pl-4">
                 <span className="w-12 h-[2px] bg-emerald-600"></span>
-                <h4 className="text-sm font-black text-slate-900 uppercase tracking-[0.4em]">Analisis Mendalam Kriteria PTP</h4>
+                <h4 className="text-sm font-black text-slate-900 uppercase tracking-[0.4em]">Analisis Mendalam Kriteria Aset</h4>
              </div>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {report.details.map((detail, idx) => (

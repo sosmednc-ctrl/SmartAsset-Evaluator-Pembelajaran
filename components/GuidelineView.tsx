@@ -106,10 +106,10 @@ const GuidelineView: React.FC<GuidelineViewProps> = ({ onNavigate }) => {
   return (
     <div className="max-w-7xl mx-auto space-y-16 pb-24 animate-in fade-in duration-700">
       <div className="text-center space-y-6">
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-[10px] font-black uppercase tracking-[0.3em]">Official PTP Standards</div>
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-[10px] font-black uppercase tracking-[0.3em]">Aset Standart</div>
         <h2 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter">Panduan <span className="text-emerald-600">Standardisasi</span> Aset</h2>
         <p className="text-xl text-slate-500 max-w-3xl mx-auto font-medium leading-relaxed">
-          Kerangka Pedoman Pengembangan Aset Pembelajaran Digital Kemenkes CorpU.
+          Panduan Penyusunan Aset Pembelajaran Digital Corporate University Cikarang Kemenkes
         </p>
       </div>
 
@@ -163,7 +163,7 @@ const GuidelineView: React.FC<GuidelineViewProps> = ({ onNavigate }) => {
       <section className="space-y-12">
         <div className="flex flex-col items-center gap-4">
            <div className="w-16 h-1.5 bg-emerald-600 rounded-full"></div>
-           <h3 className="text-3xl font-black text-slate-900 tracking-tight text-center uppercase">Kriteria Evaluasi PTP</h3>
+           <h3 className="text-3xl font-black text-slate-900 tracking-tight text-center uppercase">Kriteria Evaluasi Aset</h3>
            <p className="text-slate-400 font-bold text-sm uppercase tracking-widest">Detail Standar Penilaian Komprehensif</p>
         </div>
         
